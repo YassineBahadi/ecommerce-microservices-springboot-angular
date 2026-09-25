@@ -1,3 +1,11 @@
 <h1>{{ title }}</h1>
 
-<app-customer></app-customer>
+<nav>
+  <a routerLink="/customers">Customers</a>
+   |
+  <a routerLink="/products">Products</a>
+    |
+  <a routerLink="/invoices">Invoices</a>
+</nav>
+
+<router-outlet></router-outlet>

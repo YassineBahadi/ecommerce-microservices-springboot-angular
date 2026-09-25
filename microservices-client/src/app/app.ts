@@ -1,14 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {Customer  } from './components/customer/customer';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 
 @Component({
-  imports: [RouterOutlet, Customer],
+  imports: [RouterOutlet,RouterLink],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('microservices-client');
+  title = 'Microservices Application';
 }
